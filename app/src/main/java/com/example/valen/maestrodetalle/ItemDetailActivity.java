@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
 
+import static com.example.valen.maestrodetalle.dummy.DummyContent.llenar;
+
 /**
  * An activity representing a single Amplificador detail screen. This
  * activity is only used narrow width devices. On tablet-size devices,
@@ -29,8 +31,7 @@ public class ItemDetailActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own detail action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                llenar();
             }
         });
 
